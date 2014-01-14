@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(first_window));
             this.nameLabel = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.firstNameInput = new System.Windows.Forms.TextBox();
             this.last_name = new System.Windows.Forms.Label();
             this.lastNameInput = new System.Windows.Forms.TextBox();
@@ -56,7 +54,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.hyperplasiaInput = new System.Windows.Forms.ComboBox();
             this.evaluate = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,25 +67,6 @@
             this.nameLabel.Size = new System.Drawing.Size(75, 19);
             this.nameLabel.TabIndex = 0;
             this.nameLabel.Text = "First Name";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(47, 39);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(0)))), ((int)(((byte)(121)))));
-            this.pictureBox2.Location = new System.Drawing.Point(-3, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(577, 43);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
             // 
             // firstNameInput
             // 
@@ -105,8 +84,9 @@
             // last_name
             // 
             this.last_name.AutoSize = true;
+            this.last_name.BackColor = System.Drawing.Color.Transparent;
             this.last_name.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.last_name.Location = new System.Drawing.Point(11, 134);
+            this.last_name.Location = new System.Drawing.Point(12, 134);
             this.last_name.Name = "last_name";
             this.last_name.Size = new System.Drawing.Size(74, 19);
             this.last_name.TabIndex = 4;
@@ -128,8 +108,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 179);
+            this.label1.Location = new System.Drawing.Point(15, 181);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 19);
             this.label1.TabIndex = 6;
@@ -151,8 +132,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 223);
+            this.label2.Location = new System.Drawing.Point(15, 225);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 19);
             this.label2.TabIndex = 8;
@@ -174,6 +156,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(11, 267);
             this.label3.Name = "label3";
@@ -197,6 +180,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(317, 88);
             this.label4.Name = "label4";
@@ -220,6 +204,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(15, 312);
             this.label5.Name = "label5";
@@ -253,6 +238,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(317, 134);
             this.label6.Name = "label6";
@@ -276,6 +262,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(317, 179);
             this.label7.Name = "label7";
@@ -303,6 +290,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(317, 223);
             this.label8.Name = "label8";
@@ -326,6 +314,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(317, 267);
             this.label9.Name = "label9";
@@ -349,6 +338,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(317, 312);
             this.label10.Name = "label10";
@@ -387,11 +377,23 @@
             this.evaluate.UseVisualStyleBackColor = false;
             this.evaluate.Click += new System.EventHandler(this.evaluate_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(591, 4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox2.TabIndex = 27;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // first_window
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(616, 405);
+            this.Controls.Add(this.nameLabel);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.evaluate);
             this.Controls.Add(this.hyperplasiaInput);
             this.Controls.Add(this.label10);
@@ -416,14 +418,13 @@
             this.Controls.Add(this.lastNameInput);
             this.Controls.Add(this.last_name);
             this.Controls.Add(this.firstNameInput);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.nameLabel);
-            this.Controls.Add(this.pictureBox2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "first_window";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -433,8 +434,6 @@
         #endregion
 
         private System.Windows.Forms.Label nameLabel;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox firstNameInput;
         private System.Windows.Forms.Label last_name;
         private System.Windows.Forms.TextBox lastNameInput;
@@ -459,6 +458,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox hyperplasiaInput;
         private System.Windows.Forms.Button evaluate;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

@@ -18,10 +18,28 @@ namespace RiskCalculatorUI
         {
             InitializeComponent();
         }
+        Point mouseDownPoint = Point.Empty;
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDownPoint = new Point(e.X, e.Y);
+        }
+
+        private void Form1_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDownPoint = Point.Empty;
+        }
+
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDownPoint.IsEmpty)
+                return;
+            Form f = sender as Form;
+            f.Location = new Point(f.Location.X + (e.X - mouseDownPoint.X), f.Location.Y + (e.Y - mouseDownPoint.Y));
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+           
            
             
            
@@ -139,8 +157,16 @@ namespace RiskCalculatorUI
             //nameLabel.Text = absRiskPctg.ToString("F1");
             Console.Read();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
         
+
+
     }
+
     
 }
     
