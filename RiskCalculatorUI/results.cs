@@ -47,5 +47,12 @@ namespace RiskCalculatorUI
         {
 
         }
+
+        private void evaluate_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+       
     }
 }
