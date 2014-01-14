@@ -14,6 +14,11 @@ namespace RiskCalculatorUI
 {
     public partial class first_window : Form
     {
+
+        public static Point l1 = new Point();
+        public static int prediction = 0;
+        public static double predictionResult = 0.0;
+        public static double averageRisk = 0.0;
         public first_window()
         {
             InitializeComponent();
@@ -35,12 +40,13 @@ namespace RiskCalculatorUI
                 return;
             Form f = sender as Form;
             f.Location = new Point(f.Location.X + (e.X - mouseDownPoint.X), f.Location.Y + (e.Y - mouseDownPoint.Y));
+            l1 = f.Location;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
-           
+
+            l1 = this.Location;
             
            
         }
@@ -126,6 +132,7 @@ namespace RiskCalculatorUI
             string[] qw = (birthDateInput.Text).Split('/');
             int xy = Convert.ToInt32(qw[0]);
             int ag = 2014 - xy;
+            prediction = Convert.ToInt32(projectionInput.Text);
             int currentAge = BcptConvert.GetCurrentAge(ag);
 
             int menarcheAge = BcptConvert.GetMenarcheAge(menarchInput.Text);
@@ -142,14 +149,21 @@ namespace RiskCalculatorUI
                 hyperPlasia, firstDegreeRel, race, out absRisk, out avgRisk);
             Helper.CalcPercentage(absRisk, avgRisk, out absRiskPctg, out avgRiskPctg);
 
+            predictionResult = absRiskPctg;
+            averageRisk = avgRiskPctg;
+
             Console.WriteLine("5 year risk");
             Console.WriteLine("This woman (age {0:N}) = {1:F}", currentAge, absRiskPctg);
             Console.WriteLine("Average woman (age {0:N}) = {1:F}", currentAge, avgRiskPctg);
-            System.Windows.Forms.MessageBox.Show(absRiskPctg.ToString());
+            //System.Windows.Forms.MessageBox.Show(absRiskPctg.ToString());
             // Calculate lifetime risk.
             Helper.RiskCalc(0, currentAge, 90, menarcheAge, firstLiveBirthAge, hadBiopsy, numBiopsy,
                 hyperPlasia, firstDegreeRel, race, out absRisk, out avgRisk);
             Helper.CalcPercentage(absRisk, avgRisk, out absRiskPctg, out avgRiskPctg);
+
+
+            results rsWin = new results();
+            rsWin.Show();
 
             Console.WriteLine("\nLifetime risk");
             Console.WriteLine("This woman (to age 90): " + absRiskPctg.ToString("F1"));
