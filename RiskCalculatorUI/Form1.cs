@@ -96,14 +96,29 @@ namespace RiskCalculatorUI
             
 
             double absRisk = 0, avgRisk = 0, absRiskPctg = 0, avgRiskPctg = 0;
-            int currentAge = BcptConvert.GetCurrentAge(35);
-            int menarcheAge = BcptConvert.GetMenarcheAge("11");
-            int firstLiveBirthAge = BcptConvert.GetFirstLiveBirthAge("29");
-            int firstDegreeRel = BcptConvert.GetFirstDegRelatives("1");
-            int hadBiopsy = BcptConvert.GetEverHadBiopsy("1");
-            int numBiopsy = BcptConvert.GetNumberOfBiopsy("1");
-            int hyperPlasia = BcptConvert.GetHyperPlasia("1");
-            int race = BcptConvert.GetRace("1");
+            
+            //int currentAge = BcptConvert.GetCurrentAge(35);
+            //int menarcheAge = BcptConvert.GetMenarcheAge("11");
+            //int firstLiveBirthAge = BcptConvert.GetFirstLiveBirthAge("29");
+            //int firstDegreeRel = BcptConvert.GetFirstDegRelatives("1");
+            //int hadBiopsy = BcptConvert.GetEverHadBiopsy("1");
+            //int numBiopsy = BcptConvert.GetNumberOfBiopsy("1");
+            //int hyperPlasia = BcptConvert.GetHyperPlasia("1");
+            //int race = BcptConvert.GetRace("7");
+            string[] qw = (birthDateInput.Text).Split('/');
+            int xy = Convert.ToInt32(qw[0]);
+            int ag = 2014 - xy;
+            int currentAge = BcptConvert.GetCurrentAge(ag);
+
+            int menarcheAge = BcptConvert.GetMenarcheAge(menarchInput.Text);
+            int firstLiveBirthAge = BcptConvert.GetFirstLiveBirthAge(firstChildAge.Text);
+            int firstDegreeRel = BcptConvert.GetFirstDegRelatives(firstRelativesInput.Text);
+            int hadBiopsy = BcptConvert.GetEverHadBiopsy(breastBiopsy.SelectedItem.ToString());
+            
+            int numBiopsy = BcptConvert.GetNumberOfBiopsy(numberOfBiopsies.Text);
+            int hyperPlasia = BcptConvert.GetHyperPlasia(hyperplasiaInput.SelectedItem.ToString());
+
+            int race = BcptConvert.GetRace(raceInput.SelectedItem.ToString());
             // Calculate 5 year risk.
             Helper.RiskCalc(0, currentAge, currentAge + 5, menarcheAge, firstLiveBirthAge, hadBiopsy, numBiopsy,
                 hyperPlasia, firstDegreeRel, race, out absRisk, out avgRisk);
@@ -124,6 +139,8 @@ namespace RiskCalculatorUI
             //nameLabel.Text = absRiskPctg.ToString("F1");
             Console.Read();
         }
+        
     }
+    
 }
     

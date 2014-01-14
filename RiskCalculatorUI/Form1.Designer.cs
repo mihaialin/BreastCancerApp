@@ -294,7 +294,7 @@
             this.breastBiopsy.Items.AddRange(new object[] {
             "Yes",
             "No",
-            "I don\'t know"});
+            "Unknown"});
             this.breastBiopsy.Location = new System.Drawing.Point(445, 179);
             this.breastBiopsy.Name = "breastBiopsy";
             this.breastBiopsy.Size = new System.Drawing.Size(159, 27);
@@ -367,7 +367,7 @@
             this.hyperplasiaInput.Items.AddRange(new object[] {
             "Yes",
             "No",
-            "I don\'t know"});
+            "Unknown"});
             this.hyperplasiaInput.Location = new System.Drawing.Point(498, 312);
             this.hyperplasiaInput.Name = "hyperplasiaInput";
             this.hyperplasiaInput.Size = new System.Drawing.Size(106, 27);
@@ -375,7 +375,7 @@
             // 
             // evaluate
             // 
-            this.evaluate.BackColor = System.Drawing.Color.MediumOrchid;
+            this.evaluate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(128)))), ((int)(((byte)(176)))));
             this.evaluate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.evaluate.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.evaluate.ForeColor = System.Drawing.Color.White;

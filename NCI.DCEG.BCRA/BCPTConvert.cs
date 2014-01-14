@@ -294,7 +294,7 @@ namespace NCI.DCEG.BCRA.Engine
                 case "WHITE":
                 case _UNKNOWN:
                 case "1":
-                case "4":   //! recode other race to white 5/12/00
+                case "4":   
                     rval = BcptRace.White;
                     break;
                 case "BLACK":
@@ -305,21 +305,27 @@ namespace NCI.DCEG.BCRA.Engine
                 case "3":
                     rval = BcptRace.Hispanic;
                     break;
+                case "CHINESE":
                 case "7":
                     rval = BcptRace.AAChinese;
                     break;
+                case "JAPANESE":
                 case "8":
                     rval = BcptRace.AAJapanese;
                     break;
+                case "PHILIPINO":
                 case "9":
                     rval = BcptRace.AAFilipino;
                     break;
+                case "HAWAIIAN":
                 case "10":
                     rval = BcptRace.AAHawaiian;
                     break;
+                case "OCEANIC":
                 case "11":
                     rval = BcptRace.AAOtherPacificIslander;
                     break;
+                case "OTHER ASIAN/AMERICAN":
                 case "12":
                     rval = BcptRace.AAOtherAsianAmerican;
                     break;
