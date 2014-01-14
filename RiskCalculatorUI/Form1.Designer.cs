@@ -418,7 +418,7 @@
             this.Controls.Add(this.lastNameInput);
             this.Controls.Add(this.last_name);
             this.Controls.Add(this.firstNameInput);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "first_window";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
