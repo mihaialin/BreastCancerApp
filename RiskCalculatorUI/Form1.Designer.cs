@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(first_window));
             this.nameLabel = new System.Windows.Forms.Label();
             this.firstNameInput = new System.Windows.Forms.TextBox();
             this.last_name = new System.Windows.Forms.Label();
@@ -54,15 +53,13 @@
             this.label10 = new System.Windows.Forms.Label();
             this.hyperplasiaInput = new System.Windows.Forms.ComboBox();
             this.evaluate = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
             this.nameLabel.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.nameLabel.Location = new System.Drawing.Point(11, 88);
+            this.nameLabel.Location = new System.Drawing.Point(11, 67);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(75, 19);
             this.nameLabel.TabIndex = 0;
@@ -74,7 +71,7 @@
             this.firstNameInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.firstNameInput.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.firstNameInput.ForeColor = System.Drawing.Color.DimGray;
-            this.firstNameInput.Location = new System.Drawing.Point(121, 88);
+            this.firstNameInput.Location = new System.Drawing.Point(121, 67);
             this.firstNameInput.Name = "firstNameInput";
             this.firstNameInput.Size = new System.Drawing.Size(161, 26);
             this.firstNameInput.TabIndex = 3;
@@ -86,7 +83,7 @@
             this.last_name.AutoSize = true;
             this.last_name.BackColor = System.Drawing.Color.Transparent;
             this.last_name.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.last_name.Location = new System.Drawing.Point(12, 134);
+            this.last_name.Location = new System.Drawing.Point(12, 113);
             this.last_name.Name = "last_name";
             this.last_name.Size = new System.Drawing.Size(74, 19);
             this.last_name.TabIndex = 4;
@@ -98,7 +95,7 @@
             this.lastNameInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lastNameInput.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lastNameInput.ForeColor = System.Drawing.Color.DimGray;
-            this.lastNameInput.Location = new System.Drawing.Point(121, 134);
+            this.lastNameInput.Location = new System.Drawing.Point(121, 113);
             this.lastNameInput.Name = "lastNameInput";
             this.lastNameInput.Size = new System.Drawing.Size(161, 26);
             this.lastNameInput.TabIndex = 5;
@@ -110,7 +107,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 181);
+            this.label1.Location = new System.Drawing.Point(15, 160);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 19);
             this.label1.TabIndex = 6;
@@ -122,7 +119,7 @@
             this.birthDateInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.birthDateInput.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.birthDateInput.ForeColor = System.Drawing.Color.DimGray;
-            this.birthDateInput.Location = new System.Drawing.Point(121, 179);
+            this.birthDateInput.Location = new System.Drawing.Point(121, 158);
             this.birthDateInput.Name = "birthDateInput";
             this.birthDateInput.Size = new System.Drawing.Size(161, 26);
             this.birthDateInput.TabIndex = 7;
@@ -134,7 +131,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(15, 225);
+            this.label2.Location = new System.Drawing.Point(15, 204);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 19);
             this.label2.TabIndex = 8;
@@ -146,7 +143,7 @@
             this.emailInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.emailInput.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.emailInput.ForeColor = System.Drawing.Color.DimGray;
-            this.emailInput.Location = new System.Drawing.Point(121, 223);
+            this.emailInput.Location = new System.Drawing.Point(121, 202);
             this.emailInput.Name = "emailInput";
             this.emailInput.Size = new System.Drawing.Size(161, 26);
             this.emailInput.TabIndex = 9;
@@ -158,7 +155,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(11, 267);
+            this.label3.Location = new System.Drawing.Point(11, 246);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(159, 19);
             this.label3.TabIndex = 10;
@@ -170,7 +167,7 @@
             this.projectionInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.projectionInput.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.projectionInput.ForeColor = System.Drawing.Color.DimGray;
-            this.projectionInput.Location = new System.Drawing.Point(176, 267);
+            this.projectionInput.Location = new System.Drawing.Point(176, 246);
             this.projectionInput.Name = "projectionInput";
             this.projectionInput.Size = new System.Drawing.Size(106, 26);
             this.projectionInput.TabIndex = 11;
@@ -182,7 +179,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(317, 88);
+            this.label4.Location = new System.Drawing.Point(317, 67);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(159, 19);
             this.label4.TabIndex = 12;
@@ -194,7 +191,7 @@
             this.menarchInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.menarchInput.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.menarchInput.ForeColor = System.Drawing.Color.DimGray;
-            this.menarchInput.Location = new System.Drawing.Point(498, 86);
+            this.menarchInput.Location = new System.Drawing.Point(498, 65);
             this.menarchInput.Name = "menarchInput";
             this.menarchInput.Size = new System.Drawing.Size(106, 26);
             this.menarchInput.TabIndex = 13;
@@ -206,7 +203,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(15, 312);
+            this.label5.Location = new System.Drawing.Point(15, 291);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(37, 19);
             this.label5.TabIndex = 14;
@@ -230,7 +227,7 @@
             "Hawaiian",
             "Oceanic",
             "Other Asian/American"});
-            this.raceInput.Location = new System.Drawing.Point(121, 309);
+            this.raceInput.Location = new System.Drawing.Point(121, 288);
             this.raceInput.Name = "raceInput";
             this.raceInput.Size = new System.Drawing.Size(159, 27);
             this.raceInput.TabIndex = 15;
@@ -240,7 +237,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(317, 134);
+            this.label6.Location = new System.Drawing.Point(317, 113);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(122, 19);
             this.label6.TabIndex = 16;
@@ -252,7 +249,7 @@
             this.firstChildAge.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.firstChildAge.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.firstChildAge.ForeColor = System.Drawing.Color.DimGray;
-            this.firstChildAge.Location = new System.Drawing.Point(498, 132);
+            this.firstChildAge.Location = new System.Drawing.Point(498, 111);
             this.firstChildAge.Name = "firstChildAge";
             this.firstChildAge.Size = new System.Drawing.Size(106, 26);
             this.firstChildAge.TabIndex = 17;
@@ -264,7 +261,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(317, 179);
+            this.label7.Location = new System.Drawing.Point(317, 158);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(102, 19);
             this.label7.TabIndex = 18;
@@ -282,7 +279,7 @@
             "Yes",
             "No",
             "Unknown"});
-            this.breastBiopsy.Location = new System.Drawing.Point(445, 179);
+            this.breastBiopsy.Location = new System.Drawing.Point(445, 158);
             this.breastBiopsy.Name = "breastBiopsy";
             this.breastBiopsy.Size = new System.Drawing.Size(159, 27);
             this.breastBiopsy.TabIndex = 19;
@@ -292,7 +289,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(317, 223);
+            this.label8.Location = new System.Drawing.Point(317, 202);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(170, 19);
             this.label8.TabIndex = 20;
@@ -304,7 +301,7 @@
             this.numberOfBiopsies.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.numberOfBiopsies.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.numberOfBiopsies.ForeColor = System.Drawing.Color.DimGray;
-            this.numberOfBiopsies.Location = new System.Drawing.Point(498, 221);
+            this.numberOfBiopsies.Location = new System.Drawing.Point(498, 200);
             this.numberOfBiopsies.Name = "numberOfBiopsies";
             this.numberOfBiopsies.Size = new System.Drawing.Size(106, 26);
             this.numberOfBiopsies.TabIndex = 21;
@@ -316,7 +313,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(317, 267);
+            this.label9.Location = new System.Drawing.Point(317, 246);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(202, 19);
             this.label9.TabIndex = 22;
@@ -328,7 +325,7 @@
             this.firstRelativesInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.firstRelativesInput.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.firstRelativesInput.ForeColor = System.Drawing.Color.DimGray;
-            this.firstRelativesInput.Location = new System.Drawing.Point(525, 267);
+            this.firstRelativesInput.Location = new System.Drawing.Point(525, 246);
             this.firstRelativesInput.Name = "firstRelativesInput";
             this.firstRelativesInput.Size = new System.Drawing.Size(79, 26);
             this.firstRelativesInput.TabIndex = 23;
@@ -340,7 +337,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(317, 312);
+            this.label10.Location = new System.Drawing.Point(317, 291);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(177, 19);
             this.label10.TabIndex = 24;
@@ -358,7 +355,7 @@
             "Yes",
             "No",
             "Unknown"});
-            this.hyperplasiaInput.Location = new System.Drawing.Point(498, 312);
+            this.hyperplasiaInput.Location = new System.Drawing.Point(498, 291);
             this.hyperplasiaInput.Name = "hyperplasiaInput";
             this.hyperplasiaInput.Size = new System.Drawing.Size(106, 27);
             this.hyperplasiaInput.TabIndex = 25;
@@ -377,23 +374,12 @@
             this.evaluate.UseVisualStyleBackColor = false;
             this.evaluate.Click += new System.EventHandler(this.evaluate_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(591, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox2.TabIndex = 27;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // first_window
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(616, 405);
             this.Controls.Add(this.nameLabel);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.evaluate);
             this.Controls.Add(this.hyperplasiaInput);
             this.Controls.Add(this.label10);
@@ -425,7 +411,6 @@
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -458,7 +443,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox hyperplasiaInput;
         private System.Windows.Forms.Button evaluate;
-        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
