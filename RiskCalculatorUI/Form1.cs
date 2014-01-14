@@ -19,6 +19,7 @@ namespace RiskCalculatorUI
         public static int prediction = 0;
         public static double predictionResult = 0.0;
         public static double averageRisk = 0.0;
+        public static double absRisk = 0, avgRisk = 0, absRiskPctg = 0, avgRiskPctg = 0;
         public first_window()
         {
             InitializeComponent();
@@ -119,7 +120,7 @@ namespace RiskCalculatorUI
         public void evaluateRisk(){
             
 
-            double absRisk = 0, avgRisk = 0, absRiskPctg = 0, avgRiskPctg = 0;
+           
             
             //int currentAge = BcptConvert.GetCurrentAge(35);
             //int menarcheAge = BcptConvert.GetMenarcheAge("11");
@@ -157,8 +158,7 @@ namespace RiskCalculatorUI
             Console.WriteLine("Average woman (age {0:N}) = {1:F}", currentAge, avgRiskPctg);
             //System.Windows.Forms.MessageBox.Show(absRiskPctg.ToString());
             // Calculate lifetime risk.
-            Helper.RiskCalc(0, currentAge, 90, menarcheAge, firstLiveBirthAge, hadBiopsy, numBiopsy,
-                hyperPlasia, firstDegreeRel, race, out absRisk, out avgRisk);
+            Helper.RiskCalc(0, currentAge, 90, menarcheAge, firstLiveBirthAge, hadBiopsy, numBiopsy,hyperPlasia, firstDegreeRel, race, out absRisk, out avgRisk);
             Helper.CalcPercentage(absRisk, avgRisk, out absRiskPctg, out avgRiskPctg);
 
 
